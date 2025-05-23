@@ -141,3 +141,15 @@ footer {
 #about ul li {
   margin-bottom: 10px;
 }
+
+.resume-btn {
+  background-color: #0077b5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.resume-btn:hover {
+  background-color: #005f8d;
+}
