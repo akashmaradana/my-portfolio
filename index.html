@@ -9,96 +9,226 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 
 <body>
+  <div id="theme-toggle">
+    <i class="fas fa-moon"></i>
+  </div>
+
+  <div id="particles-js"></div>
+
   <header>
     <nav>
-      <!-- Add your logo here -->
-    <a href="#home">
-      <img src="assets/images/logo.jpg" alt="Logo" class="logo" width="50" height="50">
-    </a>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#home" class="logo">
+        <div class="logo-text">
+          <span class="logo-letter">A</span>
+          <span class="logo-name">Akash</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#home" class="nav-item active">Home</a></li>
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#skills" class="nav-item">Skills</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   </header>
 
-  <section id="home">
-    <h1>Hi, I'm Akash</h1>
-    <a href="assets/files/resume.pdf" target="_blank" class="resume-btn">Download Resume</a>
-    <p><span id="typing"></span></p>
-  </section>
-
- <section id="about">
-  <h2>About Me</h2>
-  <p>I am an aspiring Data Scientist with a passion for turning data into actionable insights. With a strong background in statistical analysis and machine learning, I thrive on solving real-world problems through data-driven approaches. I specialize in:</p>
-  <ul>
-    <li><strong>Building machine learning models</strong> to predict trends and outcomes.</li>
-    <li><strong>Data preprocessing, cleaning, and transforming</strong> raw data into meaningful insights.</li>
-    <li><strong>Creating intuitive visualizations</strong> to communicate findings effectively.</li>
-    <li><strong>Exploring large datasets</strong> to uncover patterns that drive business strategies.</li>
-    <li><strong>Collaborating with cross-functional teams</strong> to implement data-driven solutions.</li>
-  </ul>
-  <p>My expertise spans across various domains, including business analytics, healthcare data analysis, and natural language processing (NLP). I am always eager to learn and take on new challenges that involve solving complex problems using data science techniques.</p>
- </section>
-
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="grid">
-      <div class="card">Python</div>
-      <div class="card">SQL</div>
-      <div class="card">Machine Learning</div>
-      <div class="card">Deep Learning</div>
-      <div class="card">NLP</div>
-      <div class="card">GenAI</div>
-      <div class="card">Power BI</div>
+  <section id="home" class="section">
+    <div class="container">
+      <div class="home-content">
+        <h1 class="animate-text">Hi, I'm Akash</h1>
+        <p class="animate-text"><span id="typing"></span></p>
+        <div class="cta-buttons">
+          <a href="assets/files/resume.pdf" target="_blank" class="btn primary-btn">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn secondary-btn">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Travel Recommendation System</h3>
-      <p>A machine learning project that recommends travel destinations based on user preferences.</p>
-      <a href="https://github.com/akashmaradana/Travel_recommendation" target="_blank">GitHub</a>
-    </div>
-    <div class="card">
-      <h3>Customer Churn Prediction</h3>
-      <p>ML model that predicts whether a customer will churn based on service data.</p>
-      <a href="https://github.com/akashmaradana/Customer_churn" target="_blank">GitHub</a>
-    </div>
-    <div class="card">
-      <h3>Netflix SQL Analysis</h3>
-      <p>SQL project analyzing Netflix user data to derive insights.</p>
-      <a href="https://github.com/akashmaradana/Netflix" target="_blank">GitHub</a>
-    </div>
-    <div class="card">
-      <h3>Music Store SQL</h3>
-      <p>SQL-based analysis of a music store's sales and customer behavior.</p>
-      <a href="https://github.com/akashmaradana/Music_store" target="_blank">GitHub</a>
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I am an aspiring Data Scientist with a passion for turning data into actionable insights. With a strong background in statistical analysis and machine learning, I thrive on solving real-world problems through data-driven approaches.</p>
+          <div class="specialties">
+            <div class="specialty-item">
+              <i class="fas fa-brain"></i>
+              <h3>Machine Learning</h3>
+              <p>Building predictive models and algorithms</p>
+            </div>
+            <div class="specialty-item">
+              <i class="fas fa-database"></i>
+              <h3>Data Processing</h3>
+              <p>Cleaning and transforming raw data</p>
+            </div>
+            <div class="specialty-item">
+              <i class="fas fa-chart-line"></i>
+              <h3>Visualization</h3>
+              <p>Creating intuitive data visualizations</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: maradanaakash@example.com</p>
-    <p>Phone no: 9876543210</p>
-    <p>GitHub: 
-      <a href="https://github.com/akashmaradana" target="_blank" style="color: white;">GitHub</a>
-    </p>
-    <p>LinkedIn: 
-      <a href="https://www.linkedin.com/in/akash-maradana-1275212a7/" target="_blank" style="color: white;">LinkedIn</a> 
-    </p>
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-content">
+        <div class="skill-category">
+          <h3>Programming</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">SQL</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Machine Learning</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Deep Learning</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">NLP</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Travel Recommendation System</h3>
+            <p>A machine learning project that recommends travel destinations based on user preferences.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>ML</span>
+              <span>NLP</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/akashmaradana/Travel_recommendation" target="_blank" class="btn">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Customer Churn Prediction</h3>
+            <p>ML model that predicts whether a customer will churn based on service data.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>ML</span>
+              <span>Analytics</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/akashmaradana/Customer_churn" target="_blank" class="btn">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Netflix SQL Analysis</h3>
+            <p>SQL project analyzing Netflix user data to derive insights.</p>
+            <div class="project-tech">
+              <span>SQL</span>
+              <span>Analytics</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/akashmaradana/Netflix" target="_blank" class="btn">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>maradanaakash@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>9876543210</p>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/akashmaradana" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/akash-maradana-1275212a7/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Akash Maradana</p>
+    <div class="container">
+      <p>&copy; 2025 Akash Maradana. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="assets/js/script.js"></script>
